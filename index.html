@@ -10,7 +10,7 @@
         <h1 id="header">Andre Mercer</h1>
         <div class="navbar">
           <a href="index.html">Home</a>
-          <a href="#">Blog</a>
+          {{#link-to 'posts'}}Blog{{/link-to}}
           <a href="#">Resume</a>
         </div>
       </div>
@@ -24,6 +24,13 @@
       <p>Have a look around.</p>
     </script>
 
+    <script type="text/x-handlebars" id="posts">
+      <p>Blog Entries</p>
+      <br>
+      {{#each model}}
+        <p>{{title}}</p>
+      {{/each}}
+    </script>
 
     <script src="js/libs/jquery-1.9.1.js"></script>
     <script src="js/libs/handlebars-1.0.0.js"></script>
