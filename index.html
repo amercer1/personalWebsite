@@ -5,19 +5,24 @@
 		<title>Andre Mercer</title>
 	</head>
 	<body>
-		<div id="topBar">
-      <h1 id="header">Andre Mercer</h1>
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Resume</a>
+    <script type="text/x-handlebars">
+      <div id="topBar">
+        <h1 id="header">Andre Mercer</h1>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Resume</a>
+        </div>
       </div>
-    </div>
-    <div id="lowerBody">
+      <div id="lowerBody">
+        {{outlet}}
+      </div>
+    </script>
+
+    <script type="text/x-handlebars" id="index">
       <p>My name is Andre Mercer. I enjoy technology and experimenting with it to create a different tomorrow.</p>
       <p>Have a look around.</p>
-    </div>
-
+    </script>
 
 
     <script src="js/libs/jquery-1.9.1.js"></script>
