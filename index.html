@@ -29,8 +29,14 @@
       <p>Blog Entries</p>
       <br>
       {{#each model}}
-        <p>{{title}}</p>
+        {{#link-to 'post' this}} <p>{{title}}</p> {{/link-to}}
       {{/each}}
+    </script>
+
+    <script type="text/x-handlebars" id="post">
+      <h1>{{title}}</h1>
+      <h2>by {{author.name}} - {{format-date date}}</h2>
+      <p>{{format-markdown body}}</p> 
     </script>
 
     <script src="js/libs/jquery-1.9.1.js"></script>

@@ -48,23 +48,23 @@
   color: #5C5266;
   line-height: 30px; 
   display: block;
+  text-align: center;
 }
 
 #lowerBody p{
   margin: 0;
   padding: 0;
   display: block;
-  text-align: center;
+  text-align: left;
   margin: 10px 0px 10px 0px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-}
-.right{
-	
+  text-indent: 40px;
 }
 
-.left{
-	
+#lowerBody a{
+  text-decoration: none;
+
 }
